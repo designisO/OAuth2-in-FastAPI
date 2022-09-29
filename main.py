@@ -13,6 +13,8 @@ async def token(form_data: OAuth2PasswordRequestForm = Depends()):
     return {'access_token': form_data.username + 'token'}
 
 # once the authenticaion occurs, then the scheme happens
+# creating another endpoint depending on the OAuth2 scheme. 
+# If the token is available, then it will push 200 OK.
 @app.get('/')
 async def index(token: str = Depends(oauth2_scheme)):
     return {'the_token': token}
