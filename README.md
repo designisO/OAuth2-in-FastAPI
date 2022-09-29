@@ -1,6 +1,6 @@
 ## Authentication with FastAPI
 
-Simple example of how to authenticate using FastAPI framework. Instead of Uvicorn I was able to use Hypercorn web server.
+A Simple example of how to authenticate using FastAPI framework using OAuth2RequestForm and OAuth2Password Bearer. Instead of Uvicorn I was able to use Hypercorn web server.
 
 ##### To install:
 
