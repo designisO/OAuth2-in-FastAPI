@@ -10,3 +10,4 @@ pip install fastapi, hypercorn
 To run: hypercorn <.py file>:app --reload
 
 Docs : https://fastapi.tiangolo.com/tutorial/security/
+Docs: https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/
