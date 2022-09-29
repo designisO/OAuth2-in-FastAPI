@@ -10,7 +10,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl='token')
 async def token(form_data: OAuth2PasswordRequestForm = Depends()):
     return {'access_token': form_data.username + 'token'}
 
-
+# once the authenticaion occurs, then the scheme happens
 @app.get('/')
 async def index(token: str = Depends(oauth2_scheme)):
     return {'the_token': token}
