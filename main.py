@@ -6,6 +6,7 @@ app = FastAPI()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='token')
 
 # Generating a token for authentication
+# Creating the endpoint to the token for authentication
 @app.post('/token')
 async def token(form_data: OAuth2PasswordRequestForm = Depends()):
     return {'access_token': form_data.username + 'token'}
